@@ -76,24 +76,22 @@ ClairGroup:
 Rival1Group:
 	; RIVAL1 (1)
 	db "?@", TRAINERTYPE_NORMAL
-	db  5, CHIKORITA
+	db  5, KOFFING
 	db -1 ; end
 
 	; RIVAL1 (2)
 	db "?@", TRAINERTYPE_NORMAL
-	db  5, CYNDAQUIL
+	db  5, GRIMER
 	db -1 ; end
 
 	; RIVAL1 (3)
 	db "?@", TRAINERTYPE_NORMAL
-	db  5, TOTODILE
+	db  7, KOFFING
 	db -1 ; end
 
 	; RIVAL1 (4)
 	db "?@", TRAINERTYPE_NORMAL
-	db 12, GASTLY
-	db 14, ZUBAT
-	db 16, BAYLEEF
+	db  7, GRIMER
 	db -1 ; end
 
 	; RIVAL1 (5)
@@ -648,9 +646,9 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (13)
 	db "PETER@", TRAINERTYPE_NORMAL
-	db  6, PIDGEY
-	db  6, PIDGEY
-	db  8, SPEAROW
+	db  3, PIDGEY
+	db  3, PIDGEY
+	db  4, SPEAROW
 	db -1 ; end
 
 	; BIRD_KEEPER (14)

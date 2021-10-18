@@ -1524,23 +1524,24 @@ _MayRegisterItemText::
 	done
 
 _OakText1::
-	text "Hello! Sorry to"
-	line "keep you waiting!"
+	text "Hello there."
+	line "Welcome."
 
-	para "Welcome to the"
-	line "world of #MON!"
+	para "This is the"
+	line "world of #MON."
 
-	para "My name is OAK."
+	para "My name is ARCHER."
 
-	para "People call me the"
-	line "#MON PROF."
+	para "I am the head"
+	line "EXECUTIVE of"
+	cont "TEAM ROCKET."
 	prompt
 
 _OakText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#MON.@"
+	text "As you know, this"
+	line "world is inhabi-"
+	cont "ted by creatures"
+	cont "we call #MON.@"
 	text_end
 
 _OakText3::
@@ -1550,26 +1551,54 @@ _OakText3::
 	text_end ; unreferenced
 
 _OakText4::
-	text "People and #MON"
-	line "live together by"
+	text "Some say that"
+	line "people and #MON"
+	para "live together by"
+	line "supporting each"
+	cont "other."
 
-	para "supporting each"
-	line "other."
+	para "Some play with"
+	line "their #MON, and"
+	para "some battle"
+	line "with them."
 
-	para "Some people play"
-	line "with #MON, some"
-	cont "battle with them."
+	para "We at TEAM ROCKET"
+	line "simply use them"
+	cont "for profit."
+
+	para "All #MON exist"
+	line "for the glory"
+	cont "of TEAM ROCKET,"
+	cont "after all…"
 	prompt
 
 _OakText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#MON yet."
+	text "Three years ago,"
+	line "TEAM ROCKET had"
+	cont "great power."
 
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
+	para "However, our reign"
+	line "came to an end."
 
-	para "That's why I study"
-	line "#MON every day."
+	para "GIOVANNI, our BOSS"
+	line "was defeated by"
+	cont "some kids…"
+
+	para "He disbanded TEAM"
+	line "ROCKET and went"
+	para "off-grid to"
+	line "get stronger."
+
+	para "But we continued"
+	line "operations under-"
+	cont "ground." 
+
+	para "And soon the time"
+	line "will have come to"
+	cont "make a comeback!"
+
+	para "We will summon our"
+	line "BOSS back from"
+	cont "his training and"
+	cont "regain our glory!"
 	prompt

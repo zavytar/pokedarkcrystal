@@ -272,10 +272,9 @@ RocketBaseRivalShovesPlayerMovement:
 
 IntroSceneText:
 	text "ARCHER: Ahem!"
+	line "Listen up!"
 
-	para "Those passwords"
-	line "are known only to"
-	cont "a few ROCKETS."
+	
 	done
 
 TeamRocketBaseB3F_MurkrowText:
@@ -294,7 +293,6 @@ TeamRocketBaseB3F_Rocket1Text:
 
 	para "They open with"
 	line "passwords!"
-	done
 	done
 
 TeamRocketBaseB3F_Rocket2Text:
@@ -365,7 +363,7 @@ TeamRocketBaseB3F_MapEvents:
 	warp_event 27, 14, TEAM_ROCKET_BASE_B2F, 5
 
 	def_coord_events
-	coord_event 10,  8, SCENE_TEAMROCKETBASEB3F_DEFAULT, TeamRocketBaseB3F_DefaultCoord
+	coord_event 12, 16, SCENE_TEAMROCKETBASEB3F_DEFAULT, TeamRocketBaseB3F_DefaultCoord
 
 	def_bg_events
 	bg_event 10,  9, BGEVENT_IFNOTSET, TeamRocketBaseB3FLockedDoor
@@ -380,13 +378,13 @@ TeamRocketBaseB3F_MapEvents:
 	bg_event  7, 13, BGEVENT_READ, TeamRocketBaseB3FOathScript
 
 	def_object_events
-	object_event 25, 14, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_ArcherScript, EVENT_TEAM_ROCKET_BASE_POPULATION	; Archer
-	object_event  8,  3, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_MusashiScript, EVENT_RIVAL_TEAM_ROCKET_BASE_B3F	; Musashi
-	object_event 25, 14, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Rocket1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket 1
+	object_event  8, 14, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_ArcherScript, EVENT_TEAM_ROCKET_BASE_POPULATION	; Archer
+	object_event  7, 16, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_MusashiScript, EVENT_RIVAL_TEAM_ROCKET_BASE_B3F	; Musashi
+	object_event  4, 15, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Rocket1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket 1
 	object_event 25, 14, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Rocket2Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket 2
-	object_event 25, 14, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_RocketGirlScript, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket Girl
-	object_event 25, 14, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 1
-	object_event 25, 14, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist2Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 2
+	object_event 22,  7, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_RocketGirlScript, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket Girl
+	object_event 11, 15, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 1
+	object_event 21, 11, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist2Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 2
 	object_event  7,  2, SPRITE_MOLTRES, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Murkrow, EVENT_TEAM_ROCKET_BASE_POPULATION	; Murkrow
 	object_event  9, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_KoffingBall, EVENT_GOT_STARTER	; Starter Koffing
 	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_GrimerBall, EVENT_GOT_STARTER	; Starter Grimer

@@ -1,28 +1,32 @@
 _OakText6::
-	text "Now, what did you"
-	line "say your name was?"
+	text "Now, GRUNT."
+	
+	para "What did you say"
+	line "your name was?"
 	prompt
 
 _OakText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	text "Ah, so it's"
+	line "<PLAYER>."
 
-	para "Your very own"
-	line "#MON story is"
-	cont "about to unfold."
+	para "What an interes-"
+	line "ting name."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Anyway, this is"
+	line "the day you join"
+	cont "our ranks."
 
-	para "A world of dreams"
-	line "and adventures"
+	para "You'll receive a"
+	line "#MON, courtesy"
+	cont "of TEAM ROCKET."
 
-	para "with #MON"
-	line "awaits! Let's go!"
+	para "You will use it"
+	line "in the missions"
+	para "that we'll assign"
+	line "to you."
 
-	para "I'll be seeing you"
-	line "later!"
+	para "Now get going!"
+	line "No messing around!"
 	done
 
 _ClockTimeMayBeWrongText::
