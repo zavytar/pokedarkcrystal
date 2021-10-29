@@ -273,8 +273,18 @@ RocketBaseRivalShovesPlayerMovement:
 IntroSceneText:
 	text "ARCHER: Ahem!"
 	line "Listen up!"
+	done
 
-	
+TeamRocketBaseB3F_ArcherText1:
+	done
+
+TeamRocketBaseB3F_ArcherText2:
+	done
+
+TeamRocketBaseB3F_MusashiText1:
+	done
+
+TeamRocketBaseB3F_MusashiText2:
 	done
 
 TeamRocketBaseB3F_MurkrowText:

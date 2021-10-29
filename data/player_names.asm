@@ -11,7 +11,7 @@ ChrisNameMenuHeader:
 	db "NEW NAME@"
 MalePlayerNameArray:
 	db "CHRIS@"
-	db "MAT@"
+	db "CLYDE@"
 	db "ALLAN@"
 	db "JON@"
 	db 2 ; title indent
@@ -30,7 +30,7 @@ KrisNameMenuHeader:
 	db "NEW NAME@"
 FemalePlayerNameArray:
 	db "KRIS@"
-	db "AMANDA@"
+	db "BONNIE@"
 	db "JUANA@"
 	db "JODI@"
 	db 2 ; title indent
