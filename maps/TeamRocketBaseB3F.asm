@@ -114,15 +114,17 @@ TeamRocketBaseB3F_Scientist1Script:
 TeamRocketBaseB3F_Scientist2Script:
 	jumptextfaceplayer TeamRocketBaseB3F_Scientist2Text
 
-RocketBaseBossLeft:
-	applymovement PLAYER, RocketBasePlayerApproachesBossLeftMovement
-	sjump RocketBaseBoss
-
 TeamRocketBaseB3F_Murkrow:
 	opentext
 	writetext TeamRocketBaseB3F_MurkrowText
 	waitbutton
 	closetext
+	end
+
+TeamRocketBaseB3F_KoffingBall:
+	end
+
+TeamRocketBaseB3F_GrimerBall:
 	end
 
 TeamRocketBaseB3FLockedDoor:
@@ -373,7 +375,7 @@ TeamRocketBaseB3F_MapEvents:
 	warp_event 27, 14, TEAM_ROCKET_BASE_B2F, 5
 
 	def_coord_events
-	coord_event 12, 16, SCENE_TEAMROCKETBASEB3F_DEFAULT, TeamRocketBaseB3F_DefaultCoord
+	coord_event 12, 16, SCENE_TEAMROCKETBASEB3F_RIVAL_ENCOUNTER, TeamRocketBaseB3F_DefaultCoord
 
 	def_bg_events
 	bg_event 10,  9, BGEVENT_IFNOTSET, TeamRocketBaseB3FLockedDoor
@@ -396,8 +398,8 @@ TeamRocketBaseB3F_MapEvents:
 	object_event 11, 15, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 1
 	object_event 21, 11, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist2Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 2
 	object_event  7,  2, SPRITE_MOLTRES, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Murkrow, EVENT_TEAM_ROCKET_BASE_POPULATION	; Murkrow
-	object_event  9, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_KoffingBall, EVENT_GOT_STARTER	; Starter Koffing
-	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_GrimerBall, EVENT_GOT_STARTER	; Starter Grimer
+	object_event  9, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_KoffingBall, EVENT_GOT_A_POKEMON_FROM_ELM	; Starter Koffing
+	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_GrimerBall, EVENT_GOT_A_POKEMON_FROM_ELM	; Starter Grimer
 	object_event  1, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB3FProtein, EVENT_TEAM_ROCKET_BASE_B3F_PROTEIN	; Protein
 	object_event  3, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB3FXSpecial, EVENT_TEAM_ROCKET_BASE_B3F_X_SPECIAL	; X Special
 	object_event 28,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB3FFullHeal, EVENT_TEAM_ROCKET_BASE_B3F_FULL_HEAL	; Full Heal
