@@ -55,7 +55,7 @@ IntroSceneScript:
 	end
 
 TeamRocketBaseB3F_DefaultCoord:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_BASE
 	iftrue .RivalBattle
 	end
 
@@ -63,7 +63,7 @@ TeamRocketBaseB3F_DefaultCoord:
 	end
 
 TeamRocketBaseB3F_ArcherScript:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_BASE
 	iftrue .GotPokemon 
 	faceplayer
 	opentext
@@ -81,7 +81,7 @@ TeamRocketBaseB3F_ArcherScript:
 	end
 
 TeamRocketBaseB3F_MusashiScript:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_BASE
 	iftrue .GotPokemon 
 	faceplayer
 	opentext
@@ -275,18 +275,50 @@ RocketBaseRivalShovesPlayerMovement:
 IntroSceneText:
 	text "ARCHER: Ahem!"
 	line "Listen up!"
+
+	para "The #MON that"
+	line "TEAM ROCKET has"
+	para "so graciously"
+	line "provided for you"
+	cont "are on the table."
+
+	para "Pick one so you"
+	line "can get to work."
+	cont "Don't mess around!"
 	done
 
 TeamRocketBaseB3F_ArcherText1:
+	text "ARCHER: Well,"
+	line "GRUNT?"
+
+	para "Pick a #MON"
+	line "already!"
+	cont "Time is money!"
 	done
 
 TeamRocketBaseB3F_ArcherText2:
+	text "ARCHER: Get a"
+	line "move on, GRUNT!"
+
+	para "Our associate is"
+	line "upstairs. He will"
+	cont "give you a lift."
 	done
 
 TeamRocketBaseB3F_MusashiText1:
+	text "???: You're one of"
+	line "the newbies, right?"
+
+	para "Don't make TEAM"
+	line "ROCKET look bad!"	
 	done
 
 TeamRocketBaseB3F_MusashiText2:
+	text "???: No hard"
+	line "feelings, newbie!"
+
+	para "This is just how"
+	line "it goes!"
 	done
 
 TeamRocketBaseB3F_MurkrowText:
@@ -398,8 +430,8 @@ TeamRocketBaseB3F_MapEvents:
 	object_event 11, 15, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 1
 	object_event 21, 11, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Scientist2Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Scientist 2
 	object_event  7,  2, SPRITE_MOLTRES, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Murkrow, EVENT_TEAM_ROCKET_BASE_POPULATION	; Murkrow
-	object_event  9, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_KoffingBall, EVENT_GOT_A_POKEMON_FROM_ELM	; Starter Koffing
-	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_GrimerBall, EVENT_GOT_A_POKEMON_FROM_ELM	; Starter Grimer
+	object_event  9, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_KoffingBall, EVENT_GOT_A_POKEMON_FROM_BASE	; Starter Koffing
+	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_GrimerBall, EVENT_GOT_A_POKEMON_FROM_BASE	; Starter Grimer
 	object_event  1, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB3FProtein, EVENT_TEAM_ROCKET_BASE_B3F_PROTEIN	; Protein
 	object_event  3, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB3FXSpecial, EVENT_TEAM_ROCKET_BASE_B3F_X_SPECIAL	; X Special
 	object_event 28,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB3FFullHeal, EVENT_TEAM_ROCKET_BASE_B3F_FULL_HEAL	; Full Heal
