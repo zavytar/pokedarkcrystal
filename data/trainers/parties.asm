@@ -86,12 +86,14 @@ Rival1Group:
 
 	; RIVAL1 (3)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, KOFFING
+	db  7, SLOWPOKE
+	db  8, KOFFING
 	db -1 ; end
 
 	; RIVAL1 (4)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, GRIMER
+	db  7, SLOWPOKE
+	db  8, GRIMER
 	db -1 ; end
 
 	; RIVAL1 (5)

@@ -282,9 +282,12 @@ IntroSceneText:
 	line "provided for you"
 	cont "are on the table."
 
-	para "Pick one so you"
-	line "can get to work."
-	cont "Don't mess around!"
+	para "Pick one and we"
+	line "will give you your"
+	cont "assignment."
+
+	para "Now get moving!"
+	line "Don't mess around!"
 	done
 
 TeamRocketBaseB3F_ArcherText1:
@@ -305,6 +308,56 @@ TeamRocketBaseB3F_ArcherText2:
 	cont "give you a lift."
 	done
 
+TeamRocketBaseB3F_ArcherText3:
+	text "ARCHER: Now that"
+	line "you're both carry-"
+	cont "ing #MON,"
+	para "it's time for you"
+	line "GRUNTS to make"
+	cont "yourselves useful."
+
+	para "Get over here,"
+	line "<PLAYER>."
+	done
+
+TeamRocketBaseB3F_ArcherText4:
+	text "ARCHER: As you"
+	line "already know,"
+	para "SLOWPOKETAILS are"
+	line "the new trend."
+
+	para "SLOWPOKE can be"
+	cont "found at the WELL"
+	cont "in AZALEA TOWN."
+
+	para "EXECUTIVE PROTON"
+	line "is setting up an"
+	cont "operation there."
+	
+	para "Now, this is where"
+	line "you both come in."
+
+	para "Meet with PROTON"
+	line "at SLOWPOKE WELL."
+
+	para "As for how you"
+	line "get there…"
+
+	para "I believe one of"
+	line "our associates"
+	cont "is about to leave"
+	cont "for ROUTE 32."
+
+	para "His #MON can"
+	line "FLY, so ask him"
+	cont "for a lift. Then"
+	cont "cross UNION CAVE"
+	cont "to reach AZALEA."
+
+	para "Now, get going!"
+	line "Don't mess around!"
+	done
+
 TeamRocketBaseB3F_MusashiText1:
 	text "???: You're one of"
 	line "the newbies, right?"
@@ -319,6 +372,86 @@ TeamRocketBaseB3F_MusashiText2:
 
 	para "This is just how"
 	line "it goes!"
+	done
+
+TeamRocketBaseB3F_MusashiText3:
+	text "???: Hold it!"
+
+	para "There's no way you"
+	line "get to pick before"
+	cont "me, newbie!"
+	done
+
+TeamRocketBaseB3F_MusashiText4:
+	text "???: Hey!"
+	line "Wait up, newbie!"
+
+	para "Let's battle as"
+	line "a warm-up before"
+	cont "the mission!"
+
+	para "Here I come!"
+	done
+
+TeamRocketBaseB3F_MusashiText_YouWon:
+	text "Whatever! It's"
+	line "time to get going!"
+
+	para "You better bring"
+	line "your A-game,"
+	cont "newbie! Bye!"
+	done 
+
+TeamRocketBaseB3F_MusashiText_YouLost:
+	text "Anyway, I'm out!"
+
+	para "You better not"
+	line "hold us back,"
+	cont "newbie! Bye!"
+	done 
+
+TeamRocketBaseB3F_MusashiWinText:
+	text "Humph! It's not"
+	line "like I was taking"
+	cont "it seriously."
+	done 
+	
+TeamRocketBaseB3F_MusashiLossText:
+	text "Heh! I picked an"
+	line "awesome #MON!"
+	done 
+
+TeamRocketBaseB3F_RivalSnatchedPokemonText:
+	text "The GRUNT snatched"
+	line "the other #MON!"
+	done
+
+TeamRocketBaseB3F_PlayerText1:
+	text "…"
+
+	para "(What's wrong with"
+	line "this woman?)"
+
+	para "(I was going to"
+	line "pick the other"
+	cont "one anyway.)"
+
+	para "(Also she acts"
+	line "strong but has"
+	cont "no #MON…)"
+
+	para "(Whatever…"
+	line "What a tool.)"
+	done
+
+TeamRocketBaseB3F_PlayerGotKoffingText:
+	text "<PLAYER> got"
+	line "KOFFING!"
+	done
+
+TeamRocketBaseB3F_PlayerGotGrimerText:
+	text "<PLAYER> got"
+	line "GRIMER!"
 	done
 
 TeamRocketBaseB3F_MurkrowText:
@@ -423,7 +556,7 @@ TeamRocketBaseB3F_MapEvents:
 
 	def_object_events
 	object_event  8, 14, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_ArcherScript, EVENT_TEAM_ROCKET_BASE_POPULATION	; Archer
-	object_event  7, 16, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_MusashiScript, EVENT_RIVAL_TEAM_ROCKET_BASE_B3F	; Musashi
+	object_event  7, 16, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_MusashiScript, EVENT_RIVAL_TEAM_ROCKET_BASE	; Musashi
 	object_event  4, 15, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Rocket1Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket 1
 	object_event 25, 14, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_Rocket2Script, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket 2
 	object_event 22,  7, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TeamRocketBaseB3F_RocketGirlScript, EVENT_TEAM_ROCKET_BASE_POPULATION	; Rocket Girl

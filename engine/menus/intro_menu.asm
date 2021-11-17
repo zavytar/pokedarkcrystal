@@ -644,7 +644,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	xor a
 	ld [wCurPartySpecies], a
-	ld a, POKEMON_PROF
+	ld a, EXECUTIVEM
 	ld [wTrainerClass], a
 	call Intro_PrepTrainerPic
 
@@ -657,7 +657,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	call ClearTilemap
 
-	ld a, WOOPER
+	ld a, HOUNDOOM
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetBaseData
@@ -682,7 +682,7 @@ OakSpeech:
 
 	xor a
 	ld [wCurPartySpecies], a
-	ld a, POKEMON_PROF
+	ld a, EXECUTIVEM
 	ld [wTrainerClass], a
 	call Intro_PrepTrainerPic
 
@@ -717,7 +717,7 @@ OakText1:
 OakText2:
 	text_far _OakText2
 	text_asm
-	ld a, WOOPER
+	ld a, HOUNDOOM
 	call PlayMonCry
 	call WaitSFX
 	ld hl, OakText3

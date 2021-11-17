@@ -5,8 +5,8 @@ MomPhoneCalleeScript:
 	iftrue MomPhoneLectureScript
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue MomPhoneNoGymQuestScript
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue MomPhoneNoPokedexScript
+;	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+;	iftrue MomPhoneNoPokedexScript
 	sjump MomPhoneNoPokemonScript
 
 .started_quest
